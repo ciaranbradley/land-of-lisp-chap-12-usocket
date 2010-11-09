@@ -15,7 +15,7 @@
 (defun stream-print (string stream)
 "Prints to a usocket connected stream"
   (print string (usocket:socket-stream stream))
-  (force-output (socket:socket-stream stream)))
+  (force-output (usocket:socket-stream stream)))
 
 
 (defparameter my-socket (usocket:socket-listen "127.0.0.1" 4321))
