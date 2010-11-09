@@ -1,0 +1,7 @@
+A simple local client and server using usocket, based on the book
+Land of Lisp - Chapter 12.  http://landoflisp.com
+
+To get running, ensure you have usocket, then start an instance of your REPL. Load the server script
+Then start a second REPL and LISP instance, into this load the client.  Both instances should now be
+connected via the my-stream parameter.  The connection is bi-directional, and you should be able to send
+and recieve messages via the stream-read and stream-print commands.
